@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
+    box-sizing: border-box;
     font-family: Roboto, sans-serif;
 }
 
@@ -17,7 +18,15 @@ nav {
 }
 
 nav ul{
-    margin: 1%;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li{
+    display: inline;
+    margin: 0.5%;
+    margin-top: 0.5em;
     list-style: none;
 }
 
@@ -29,8 +38,12 @@ nav ul{
 
 h1 {
     display: inline-flex;   
-    height: 24px;
+    height: 2.5em;
     
+}
+
+h2{
+    height: 1.3em;
 }
 
 body {
@@ -43,4 +56,17 @@ section {
 
 a{
     text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+aside{
+    background-color: #303030;
+}
+
+footer{
+    background-color: #303030;
 }
