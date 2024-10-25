@@ -17,6 +17,7 @@ header {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     position: static;
     width: auto;
     justify-content: space-between;
@@ -48,6 +49,8 @@ body {
 }
 
 section {
+    justify-content: center;
+    
     background-color: #303030;
 
     h2 {
@@ -56,6 +59,29 @@ section {
 
     p {
         color: #F4B6D0;
+    }
+
+    img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75vw;
+        max-width: 800px;
+    }
+
+    video{
+        display: flex;
+        margin: 0% 25%;
+        padding: 0.5em;
+        width: auto;    
+    }
+
+    iframe{
+        display: flex;
+        margin: 0% 25%;
+        padding: 0.5em;    
+        width: 50vw;
+        height: 30vh;
     }
 }
 
