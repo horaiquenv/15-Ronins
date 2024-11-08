@@ -35,6 +35,17 @@ nav {
     }
 }
 
+body {
+    background-color: #030303;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
 h1 {
     display: inline-flex;
     height: 2.5em;
@@ -52,39 +63,69 @@ p {
     color: #F4B6D0;
 }
 
-img{
+img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+
     width: 60vw;
     max-width: 780px;
 }
 
-body {
-    background-color: #030303;
+div.logos {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+        margin: 1em;
+        width: 15%;
+    }
+}
+
+div.roster {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    div.card{
+        a{
+
+        }
+    }
+    
+    img {
+        margin: 0.5em;
+        width: 40%;
+    }
 }
 
 section {
+    display: flex;
     justify-content: center;
-    margin: auto;
-    
+    width: 70%;
+    margin: 0.5em;
     border-radius: 10px;
-    border-width: 10px;
-    border-color: #F4B6D0;
-    background-color: #303030; 
+    background-color: #303030;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 
-    video{
+    video {
         display: flex;
         margin: auto;
         padding: 0.5em;
-        width: auto;    
+        width: auto;
     }
 
-    iframe{
+    iframe {
         display: flex;
         margin: auto;
-        padding: 0.5em;    
+        padding: 0.5em;
         width: 50vw;
         height: 30vh;
     }
@@ -100,9 +141,9 @@ a:visited {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
     background-color: #303030;
-
-    p {
-        color: #F4B6D0;
-    }
 }
