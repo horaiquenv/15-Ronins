@@ -91,11 +91,6 @@ div.roster {
     justify-content: center;
     align-items: center;
     
-    div.card{
-        a{
-
-        }
-    }
     
     img {
         margin: 0.5em;
@@ -132,18 +127,67 @@ section {
 }
 
 a {
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     color: black;
+
+    a:visited {
+        color: black;
+    }
 }
 
-a:visited {
-    color: black;
+
+
+.form {    
+    width: 70%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    background-color: #303030;
+
+        h2{
+            font-size: 3em;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        input {
+            display: flex;
+            padding: 1em;
+            width: 50%;
+            margin: auto;   
+            margin-bottom: 1em;
+            background-color: #F4B6D0;
+            border-radius: 7px;
+            
+            
+        }
+
+        textarea{
+            display: flex;            
+            width: 50%;           
+            margin: auto;            
+            margin-bottom: 1em;
+            background-color: #F4B6D0;
+            border-radius: 7px;
+        }
+
+        ::placeholder{           
+            color: #C1365E;
+        }
+        
+        .submit{
+            color: #F4B6D0;
+            background-color: #C1365E;
+        }
 }
 
 footer {
     display: flex;
+    align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 95%;
     margin: auto;
     background-color: #303030;
 }
