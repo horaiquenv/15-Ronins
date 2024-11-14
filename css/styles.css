@@ -10,8 +10,9 @@ header {
     padding: 1%;
 
     img {
-        width: 2em;
-        position: relative;
+        width: 4em;
+        height: 4em;
+        
     }
 }
 
@@ -91,7 +92,6 @@ div.roster {
     justify-content: center;
     align-items: center;
     
-    
     img {
         margin: 0.5em;
         width: 40%;
@@ -137,7 +137,11 @@ a {
     }
 }
 
+i {
+    padding: 1em;
+    color: #F4B6D0;
 
+}
 
 .form {    
     width: 70%;
@@ -159,9 +163,7 @@ a {
             margin: auto;   
             margin-bottom: 1em;
             background-color: #F4B6D0;
-            border-radius: 7px;
-            
-            
+            border-radius: 7px;                       
         }
 
         textarea{
