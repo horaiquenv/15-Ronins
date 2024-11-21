@@ -9,17 +9,17 @@
 </head>
 <body>
     <header>
-        <nav>
         <div class="logo">
             <a href="../index.html">
                 <img src="https://media.tenor.com/HHyhcUbFFjIAAAAj/cherry-blossom.gif" alt="flor de cerezo">
                 <h1>15 RONINS</h1>
             </a>
         </div>
+        <nav>
             <ul>
-                <li><a href="about.html">Nosotros</a></li>
-                <li><a href="merch.html">Merch</a></li>
-                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><button><a href="about.html">Nosotros</a></button></li>
+                <li><button><a href="merch.html">Merch</a></button></li>
+                <li><button><a href="sponsors.html">Sponsors</a></button></li>
             </ul>
         </nav>
     </header>
@@ -27,12 +27,15 @@
     <div class="form">
         <h2>Escribinos!</h2>
         <form action="" method="post">       
-                <input type="text" id="name" placeholder="Nombre">            
+                <input type="text" id="name" placeholder="Nombre">
+                <span class="error" id="nameError"></span>             
                 <input type="text" id="derbyName" placeholder="Derby Name">            
                 <input type="number" id="number" placeholder="Numero">            
-                <input type="email" id="email" placeholder="Email">            
+                <input type="email" id="email" placeholder="Email">
+                <span class="error" id="emailError"></span>             
                 <input type="tel" id="phone" placeholder="Telefono">            
-                <textarea class="form-control" name="" id="description" placeholder="Breve descripcion" rows="3"></textarea>
+                <textarea class="form-control" name="" id="description" placeholder="Deja tu comentario" rows="3"></textarea>
+                <span class="error" id="areaError"></span> 
                 <input class="submit" type="submit" value="Enviar">
         </form>
     </div>
@@ -45,4 +48,5 @@
         <a href="https://www.youtube.com/@15roninsrollerderby"><i class="fa-brands fa-youtube fa-xl"></i></a>
     </footer> 
 </body>
+<script src="../js/scripts.js"></script>
 </html>

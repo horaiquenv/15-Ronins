@@ -21,7 +21,8 @@ nav {
     flex-wrap: wrap;
     position: static;
     width: auto;
-    justify-content: space-between;
+    justify-content: center;
+    border: 5px;
 
     ul {
         display: flex;
@@ -32,6 +33,18 @@ nav {
             margin: 0.5%;
             margin-top: 0.5em;
             list-style: none;
+            
+        }
+    }
+
+    button{
+        border: none;
+        border-radius: 5px;
+        background-color: #F4B6D0;
+
+        a{
+            color: #C1365E;
+            font-weight: 600;
         }
     }
 }
@@ -95,6 +108,7 @@ div.roster {
     img {
         margin: 0.5em;
         width: 40%;
+        min-width: 10em;
     }
 }
 
@@ -219,6 +233,10 @@ footer {
         textarea {
             width: 70%;
         }
+    }
+
+    div.roster{
+        flex-direction: column;
     }
 
     footer{
