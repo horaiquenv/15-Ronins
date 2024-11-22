@@ -6,8 +6,10 @@
 }
 
 header {
+    display: block;
     background-color: #ffb800;
     padding: 1%;
+    
 
     img {
         width: 4em;
@@ -51,6 +53,8 @@ nav {
 
 body {
     background-color: #030303;
+    
+    
 }
 
 main{
@@ -58,6 +62,13 @@ main{
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    background-image: url("../multimedia/img/Bandera\ 02.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+
 }
 
 h1 {
@@ -173,7 +184,6 @@ i {
     margin-bottom: 1em;
     border-radius: 10px;
     background-color: #303030;
-    
 
         h2{
             font-size: 3em;
@@ -208,6 +218,10 @@ i {
             color: #F4B6D0;
             background-color: #C1365E;
         }
+
+        p a{
+            color: #C1365E;
+        }
 }
 
 footer {
@@ -223,6 +237,17 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+    main{
+        background-color: #fff;
+        background-image: url("../multimedia/img/Logo\ ronin.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        
+        
+        
+    }
+
     .form{
         width: 90%;
 
