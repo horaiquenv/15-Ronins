@@ -1,8 +1,5 @@
 
-
-/* OBTENER ITEMS DE FORMA MANUAL (HARDCODEADO) */
-
-let merch = [
+let merchList = [
     {
         "id": 10,
         "name": "Remera Morlocks",
@@ -23,34 +20,37 @@ let merch = [
     }
 ];
 
-for(let i = 0; i<merch.length; i++) {
-    console.log("name: ", merch[i].name);
+for(let i = 0; i<merchList.length; i++) {
+    console.log("name: ", merchList[i].name);
 }
 
 
-/*seleciono el elemento donde mostrar*/
-let showMerch = document.getElementsByClassName("merch");
+let merchContainer = document.getElementById("merch");
 
-/* se crea el div donde muestra*/
+
 let merchCard = document.createElement("div");
 
-/*le asigno la clase al div creado*/
-merchCard.classList.add("card_container");
 
-/*funcion que muestra los elementos*/
-function insertDOM() {
-    merch.forEach(element => {
+merchCard.classList.add("merch");
+
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    merchList.forEach(merch => {
         merchCard.innerHTML += `
         <div class="card">
-        <form onsubmit="addProduct()">
-            <div class="card-body">
-                <h5 id="name" class="card-title">${merch.name} $></h5>
-                <h5 id="name" class="card-title">${merch.name} $></h5>
-            `
+      <form id="my_form${merch.id}">
+        <div>
+          <h2 id="nombre" name="nombre">${merch.name}</h2>          
+          <p id="precio" name="precio">${merch.price}</p>          
+          <div>
+            <p id="description${merch.id}" class="description">
+              ${merch.description}
+                <button onclick="comprar(${merch.id})" class="button" value="Comprar">Comprar</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    `;
+    merchContainer.append(merchCard);
     })
-}
-
-/* CREAR BOTON QUE PERMITA MOSTRAR LA DESCRIPCION */
-
-
-/* INTEGRAR UN CARRITO DE COMPRAS */
+})
